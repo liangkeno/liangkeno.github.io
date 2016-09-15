@@ -1,0 +1,13 @@
+_site/*
+_theme_packages/*
+_includes/themes/bootsrap-3/*
+_includes/themes/the-program/*
+_includes/themes/twitter/*
+
+Thumbs.db
+.DS_Store
+
+!.gitkeep
+
+.rbenv-version
+.rvmrc
