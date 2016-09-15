@@ -3,7 +3,7 @@ layout: post
 category : lessons
 tagline: "Supporting tagline"
 title: "了解一下requirejs的使用"
-tags : [intro, beginner, jekyll, tutorial]
+tags : [AMD,requirejs]
 ---
 {% include JB/setup %}
 
