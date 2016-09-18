@@ -1,8 +1,8 @@
 ---
 layout: post
-category : lessons
+category : javascript
 tagline: "Supporting tagline"
-title: "了解一下requirejs的使用"
+title: "测试一个requirejs的加载"
 tags : [AMD,requirejs]
 ---
 {% include JB/setup %}
