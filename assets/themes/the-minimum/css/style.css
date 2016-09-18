@@ -51,7 +51,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: junctionregularRegular, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, "MS PGothic", Osaka, Sans-Serif;
+  font-size: 18px;
   font-weight: bold;
 }
 h1, .h1 {
@@ -95,7 +95,8 @@ small, .small, aside {
   font-size: 1em;
 }
 blockquote {
-  font-weight: bold;
+    padding: 0 15px;
+    color: #777;
 }
 blockquote cite {
   font-weight: normal;
@@ -287,7 +288,7 @@ pre {
   border-bottom: 1px dotted #bbddbb;
 }
 .unit-article blockquote {
-  border-left: 0.25em solid rgba(21, 25, 25, 0.8);
+  border-left: 0.2em solid #ccc;
   padding-left: 1em;
   margin-left: 0;
 }
@@ -296,7 +297,7 @@ pre {
   margin-right: 0;
 }
 .unit-article ul, .unit-article ol, .unit-article dl {
-  padding-left: 0;
+  padding-left: 30px;
 }
 .unit-article ul {
   list-style: square;
