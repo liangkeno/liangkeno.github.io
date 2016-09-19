@@ -9,6 +9,7 @@ tags : [function, constructor, prototype]
 
 ## 从函数的数据结构看原型
 #### 从一个函数声明入手 
+
 >声明一个函数对象，并使用new实例化该对象，后输出
 
 <pre>
@@ -20,6 +21,7 @@ var instance = new person();
 console.dir(instance);
 </pre>
 ### 从构造函数实例化的普通对象
+
 *使用chrome 浏览器看到如下效果*
 ![](http://i.imgur.com/eUgr4HQ.jpg)
 >从输出的结果可以看到，当前的对象为普通对象，定义了一个sex的属性，同时还自动生成一个内部属性\_\_proto\_\_,此属性为一个对象类型，指向构造函数person的prototype.
