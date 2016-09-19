@@ -8,7 +8,8 @@ tags : [function, constructor, prototype]
 {% include JB/setup %}
 
 ## 从函数的数据结构看原型
-#### 从一个函数声明入手 
+
+### 从一个函数声明入手 
 
 >声明一个函数对象，并使用new实例化该对象，后输出
 
@@ -20,6 +21,7 @@ person.prototype.name = 'prototypeName';
 var instance = new person();
 console.dir(instance);
 </pre>
+
 ### 从构造函数实例化的普通对象
 
 *使用chrome 浏览器看到如下效果*
