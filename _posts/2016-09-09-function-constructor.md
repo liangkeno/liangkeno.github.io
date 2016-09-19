@@ -2,7 +2,7 @@
 layout: post
 category : javascript
 tagline: "Supporting tagline"
-title: "函数的结构"
+title: "图解一个简单函数的结构关系"
 tags : [function, constructor, prototype]
 ---
 {% include JB/setup %}
