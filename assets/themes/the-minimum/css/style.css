@@ -26,7 +26,7 @@ No styleguide reference.
 body {
   font-family:"Microsoft YaHei", "lucida grande", "lucida sans unicode", lucida, helvetica, "Hiragino Sans GB", "WenQuanYi Micro Hei", sans-serif
   font-size: 1em;
-  line-height: 1.625em;
+  /*line-height: 1.625em;*/
 }
 /*
 Font size setting
@@ -665,7 +665,8 @@ pre {
 */
 @media only screen and (min-width: 480px) {
   .the-header .unit-inner {
-    width: 26.25em;
+    /*width: 26.25em;*/
+    padding: 0 1em;
   }
   .the-header .logo a {
     font-size: 42px;
