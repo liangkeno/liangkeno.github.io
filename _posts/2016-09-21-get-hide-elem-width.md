@@ -16,7 +16,7 @@ tags : [offset, js技巧]
 
 **定义一个div为none的隐藏元素**
 <pre>
-<style type="text/css">
+<p>&lt;style type=&quot;text/css&quot;&gt;
 	.div{
 		width: 50px;
 		height: 50px;
@@ -25,7 +25,8 @@ tags : [offset, js技巧]
 		box-sizing: border-box;
 		display: none;
 	}
-</style>
+&lt;/style&gt;
+&lt;div class=&quot;div&quot;&gt;&lt;/div&gt;</p>
 </pre>
 
 **使用javascript获取其宽高**
@@ -51,7 +52,7 @@ window.onload = function() {
 				width: elem.offsetWidth,
 				height: elem.offsetHeight
 			}
-		//恢复原来的样式
+			//恢复原来的样式
 		for (var key in properties) {
 			elem.style[key] = previous[key];
 		}
