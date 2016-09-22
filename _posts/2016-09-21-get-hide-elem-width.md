@@ -15,18 +15,14 @@ tags : [offset, js技巧]
 >接着使用offsetWidth,offsetHeight,获取宽高，得到结果以后，把初始样式恢复。
 
 **定义一个div为none的隐藏元素**
-<pre>
-<p>&lt;style type=&quot;text/css&quot;&gt;
-	.div{
-		width: 50px;
-		height: 50px;
-		padding: 10px;
-		border:10px solid #ccc;
-		box-sizing: border-box;
-		display: none;
-	}
-&lt;/style&gt;
-&lt;div class=&quot;div&quot;&gt;&lt;/div&gt;</p>
+<pre><code>.div{
+	width: 50px;
+	height: 50px;
+	padding: 10px;
+	border:10px solid #ccc;
+	box-sizing: border-box;
+	display: none;
+}</code>
 </pre>
 
 **使用javascript获取其宽高**
