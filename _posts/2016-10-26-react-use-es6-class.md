@@ -45,6 +45,11 @@ yo react-webpack:component new
 'use strict';
 
 import React from 'react';
+//由于目前react版本过高，使用此方法引入findDOMNode
+import {
+	findDOMNode
+} from 'react-dom';
+
 require('styles//New.css');
 
 class NewComponent extends React.Component {
@@ -53,23 +58,38 @@ class NewComponent extends React.Component {
 			super(props);
 			//初始化状态，也在此定义
 			this.state = {
-				assert: 'yes'
+				like: true
 			};
 		}
 		//处理单击的事件，绑定dom对象在render标签中使用bind注入
 	handleClick() {
-			alert('you click me');
+		//alert('you click me');
+		this.setState({
+			like: !this.state.like
+		});
+	}
+	//通过findDOMNode获取真实dom,触发focus事件
+	handleFocus() {
+			//获取输入框的的真实dom
+			findDOMNode(this.refs.myText).focus();
 		}
 		//组件自身的render
 	render() {
+		var text = this.state.like ? 'I like it' : 'I do not like it';
 		return (
-		&lt;div className=&quot;new-component&quot;&gt;
-		    {this.props.name}
-		    &lt;button onClick={this.handleClick.bind(this)} &gt;click me&lt;/button&gt;
-		&lt;/div&gt;
+			&lt;div className=&quot;new-component&quot;&gt;
+			&lt;input type=&quot;text&quot; ref=&quot;myText&quot;/&gt;
+			&lt;p&gt;{text}&lt;/p&gt;
+				{this.props.name}
+				&lt;button onClick={this.handleClick.bind(this)} &gt;click me&lt;/button&gt;
+				&lt;button onClick={this.handleFocus.bind(this)} &gt;focus on text&lt;/button&gt;
+			&lt;/div&gt;
+
 		);
 	}
 }
+
+
 //定义属性在class外部定义
 NewComponent.propTypes = {
 	name: React.PropTypes.string
@@ -78,6 +98,7 @@ NewComponent.propTypes = {
 NewComponent.defaultProps = {
 	name: 'hello world!'
 };
+
 NewComponent.displayName = 'NewComponent';
 
 // Uncomment properties you need
